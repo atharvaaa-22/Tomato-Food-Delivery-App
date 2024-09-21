@@ -5,7 +5,11 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-   "server" : "nodemon server.js"
+   "server" : "nodemon server.js",
+   "prod_run": "node server.js",
+   "frontend_build": "cd ../frontend && npm run build",
+   "admin_build": "cd ../admin && npm run build",
+   "build_prod": "npm run frontend_build && npm run admin_build && npm run prod_run"
   },
   "author": "",
   "license": "ISC",
